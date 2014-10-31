@@ -1,0 +1,60 @@
+{
+	"atomic_save": false,
+	"binary_file_patterns":
+	[
+	],
+	"caret_style": "phase",
+	"color_scheme": "Packages/Theme - Gravity/Monokai Gravity (SL).tmTheme",
+	"detect_slow_plugins": false,
+	"file_exclude_patterns":
+	[
+		"*.sqlite3",
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db"
+	],
+	"findreplace_small": true,
+	"flatland_square_tabs": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"tmp/cache",
+		"tmp",
+		"node_modules",
+		"dist",
+		"android"
+	],
+	"font_face": "Monaco",
+	"font_size": 14,
+	"highlight_line": false,
+	"ignored_packages":
+	[
+	],
+	"inverse_caret_state": true,
+	"origami_auto_zoom_on_focus": 0.75,
+	"original_color_scheme": "Packages/User/base16-ocean.dark (SL).tmTheme",
+	"tabs_small": true,
+	"theme": "Gravity.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"vintage_lines.force_mode": false,
+	"vintage_start_in_command_mode": true
+}

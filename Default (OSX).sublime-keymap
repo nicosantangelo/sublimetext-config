@@ -1,0 +1,131 @@
+[
+    // Package development
+    { "keys": ["super+shift+alt+q"], "command": "_xpt_show_suites" },
+    
+    { "keys": ["super+shift+m"], "command": "gulp", "args": { "task_name": "all" } },
+    // { "keys": ["super+shift+m"], "command": "gulp_show_panel" },
+    
+    // Shortcuts for Package manager
+    { "keys": ["super+shift+y"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Set Syntax "} },
+
+    // ERB helper
+    { "keys": ["super+shift+."], "command": "erb" },
+
+    // Go to the end of the line in insert mode
+    { "keys": ["super+shift+a"], "command": "run_macro_file", "args": {"file": "Packages/User/insert_last.sublime-macro"} },
+
+    // Insert a semicolon (;) at the end of the line
+    { "keys": ["super+shift+,"], "command": "run_macro_file", "args": {"file": "Packages/User/insert_semicolon_last.sublime-macro"} },
+
+    // Add another way to travel between panels for Vintage Origami
+    { "keys": ["alt+k"], "command": "travel_to_pane", "args": {"direction": "up"}   },
+    { "keys": ["alt+j"], "command": "travel_to_pane", "args": {"direction": "down"} },
+    { "keys": ["alt+l"], "command": "travel_to_pane", "args": {"direction": "right"} },
+    { "keys": ["alt+h"], "command": "travel_to_pane", "args": {"direction": "left"}  },
+
+    // Remap gotos (I should check why I need to do this...)
+    { "keys": ["super+shift+r"], "command": "goto_symbol_in_project" },
+    { "keys": ["super+alt+down"], "command": "goto_definition" },
+
+/* ==========================================================================
+    Vintage
+    ========================================================================== */
+
+    // Move right in overlay (open tab)
+    { "keys": ["super+l"], "command": "move", "args": { "by": "characters", "forward": true },
+        "context": [ { "key": "overlay_visible", "operator": "equal", "operand": true } ]
+    },
+
+    // Move down in overlay
+    { "keys": ["super+j"], "command": "move", "args": { "by": "lines", "forward": true },
+        "context": [ { "key": "overlay_visible", "operator": "equal", "operand": true } ]
+    },
+
+    // Move up in overlay
+    { "keys": ["super+k"], "command": "move", "args": { "by": "lines", "forward": false },
+        "context": [ { "key": "overlay_visible", "operator": "equal", "operand": true } ]
+    },
+
+    // Exit command mode
+    { "keys": ["j", "j"], "command": "exit_insert_mode",
+        "context": [ { "key": "setting.command_mode", "operand": false }, { "key": "setting.is_widget", "operand": false } ]
+    },
+
+    // Go to the end ) and the beginning ( of the line without exiting command mode
+    { "keys": ["("], "command": "set_motion", "args": {
+        "motion": "vi_move_to_first_non_white_space_character",
+        "motion_args": {"extend": true, "repeat": 1 },
+        "linewise": true,
+        "clip_to_line": true },
+        "context": [{"key": "setting.command_mode"}]
+    },
+    { "keys": [")"], "command": "set_motion", "args": {
+        "motion": "vi_move_to_hard_eol",
+        "motion_args": {"repeat": 1, "extend": true},
+        "inclusive": true,
+        "clip_to_line": true },
+        "context": [{"key": "setting.command_mode"}]
+    },
+
+    // Multiselection (more than one cursor)
+    { "keys": ["super+alt+k"], "command": "select_lines", "args": {"forward": false}, "context": [{"key": "setting.command_mode"}] },
+    { "keys": ["super+alt+j"], "command": "select_lines", "args": {"forward": true}, "context": [{"key": "setting.command_mode"}] },
+    
+    // Move lines
+    { "keys": ["super+shift+k"], "command": "swap_line_up", "context": [{"key": "setting.command_mode"}] },
+    { "keys": ["super+shift+j"], "command": "swap_line_down", "context": [{"key": "setting.command_mode"}] },
+
+    // Tabs: move from tab to tab...
+    { "keys": ["g", "t"], "command": "next_view", "context": [{ "key": "setting.command_mode", "operand": true }] },
+    { "keys": ["super+l"], "command": "next_view", "context": [{ "key": "overlay_visible", "operator": "equal", "operand": false }] },
+
+    { "keys": ["g", "T"], "command": "prev_view", "context": [{ "key": "setting.command_mode", "operand": true }] },
+    { "keys": ["super+h"], "command": "prev_view", "context": [{ "key": "overlay_visible", "operator": "equal", "operand": false }] },
+
+    //...change tab position
+    { "keys": ["g", "H"], "command": "move_tab", "args": { "position": "-1" }, "context": [{ "key": "setting.command_mode" }] },
+    { "keys": ["g", "L"], "command": "move_tab", "args": { "position": "+1" }, "context": [{ "key": "setting.command_mode" }] },
+
+    { "keys": ["g", "o"], "command": "next_result", "context": [{ "key": "setting.command_mode" }] },
+    { "keys": ["g", "O"], "command": "prev_result", "context": [{ "key": "setting.command_mode" }] },
+
+    { "keys": ["g", "d"], "command": "goto_definition", "context": [{ "key": "setting.command_mode" }] },
+    // Easy Motion
+    { 
+        "keys": [" ", "<character>"], 
+        "command": "easy_motion",
+        "args": { "select_text": false },
+        "context": [{ "key": "setting.command_mode", "operand": true }]
+    },
+
+/* ==========================================================================
+    SublimeGit
+    ========================================================================== */
+    { "keys": ["D"], "command": "git_diff_cached", "context": [{ "key": "selector", "operator": "equal", "operand": "meta.git-status.line"}] },
+
+    { "keys": ["super+alt+g"], "command": "git_diff_cached" },
+    { "keys": ["super+alt+s"], "command": "git_status" },
+    { "keys": ["super+alt+c"], "command": "git_commit" },
+
+/* ==========================================================================
+    RubyTest
+    ========================================================================== */
+    // Single test
+    { "keys": ["alt+."], "command": "run_single_ruby_test",
+        "context": [
+            { "key": "selector", "operator": "equal", "operand": "source.ruby, source.rspec, text.gherkin.feature"}
+        ]
+    },
+
+    // Test file
+    { "keys": ["alt+,"], "command": "run_all_ruby_test",
+        "context": [
+            { "key": "selector", "operator": "equal", "operand": "source.ruby, source.rspec, text.gherkin.feature"}
+        ]
+    },
+
+/* ==========================================================================
+    Vintage lines
+    ========================================================================== */
+    { "keys": ["super+alt+shift+t"], "command": "toggle_setting", "args": {"setting": "vintage_lines.force_mode"} }
+]

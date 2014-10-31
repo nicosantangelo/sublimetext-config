@@ -30,7 +30,6 @@
 		"*.db"
 	],
 	"findreplace_small": true,
-	"flatland_square_tabs": true,
 	"folder_exclude_patterns":
 	[
 		".svn",

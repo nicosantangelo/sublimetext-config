@@ -1,10 +1,4 @@
 [
-    // Package development
-    { "keys": ["super+shift+alt+q"], "command": "_xpt_show_suites" },
-    
-    { "keys": ["super+shift+m"], "command": "gulp", "args": { "task_name": "all" } },
-    // { "keys": ["super+shift+m"], "command": "gulp_show_panel" },
-    
     // Shortcuts for Package manager
     { "keys": ["super+shift+y"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Set Syntax "} },
 
@@ -51,22 +45,6 @@
         "context": [ { "key": "setting.command_mode", "operand": false }, { "key": "setting.is_widget", "operand": false } ]
     },
 
-    // Go to the end ) and the beginning ( of the line without exiting command mode
-    { "keys": ["("], "command": "set_motion", "args": {
-        "motion": "vi_move_to_first_non_white_space_character",
-        "motion_args": {"extend": true, "repeat": 1 },
-        "linewise": true,
-        "clip_to_line": true },
-        "context": [{"key": "setting.command_mode"}]
-    },
-    { "keys": [")"], "command": "set_motion", "args": {
-        "motion": "vi_move_to_hard_eol",
-        "motion_args": {"repeat": 1, "extend": true},
-        "inclusive": true,
-        "clip_to_line": true },
-        "context": [{"key": "setting.command_mode"}]
-    },
-
     // Multiselection (more than one cursor)
     { "keys": ["super+alt+k"], "command": "select_lines", "args": {"forward": false}, "context": [{"key": "setting.command_mode"}] },
     { "keys": ["super+alt+j"], "command": "select_lines", "args": {"forward": true}, "context": [{"key": "setting.command_mode"}] },
@@ -90,6 +68,7 @@
     { "keys": ["g", "O"], "command": "prev_result", "context": [{ "key": "setting.command_mode" }] },
 
     { "keys": ["g", "d"], "command": "goto_definition", "context": [{ "key": "setting.command_mode" }] },
+
     // Easy Motion
     { 
         "keys": [" ", "<character>"], 
@@ -122,10 +101,5 @@
         "context": [
             { "key": "selector", "operator": "equal", "operand": "source.ruby, source.rspec, text.gherkin.feature"}
         ]
-    },
-
-/* ==========================================================================
-    Vintage lines
-    ========================================================================== */
-    { "keys": ["super+alt+shift+t"], "command": "toggle_setting", "args": {"setting": "vintage_lines.force_mode"} }
+    }
 ]

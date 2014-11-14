@@ -55,7 +55,31 @@ The Vintage config is mostly done to try to merge SublimeText shortcuts without 
 
 # Packages
 
-What's in here?
+I have the following packages installed:
+
+````
+AAAPackageDev                  RubyTest
+All Autocomplete               Sass
+ApplySyntax                    SublimeERB
+Better Completion              SublimeGit
+EasyMotion                     SublimeLinter
+Emmet                          SublimeLinter-jshint
+File Navigator                 SublimeLinter-pylint
+GitGutter                      SublimeLinter-ruby
+Gulp                           SublimeREPL
+I18n Rails                     Sublimerge Pro
+Jasmine                        Surround
+Monokai Extended               Terminal
+MoveTab                        Theme - Gravity
+Origami                        Theme - Spacegray
+PlainTasks                     Trello
+Predawn                        Vintage Escape
+Quick File Creator             Vintage Surround
+Rails Partial                  Vintage-Origami
+RSpec (snippets and syntax)    
+````
+
+if you're using [Package Control](https://sublime.wbond.net/), you can add any of those names to your `Package Control.sublime-settings` file and after restaring it will be installed automatically
 
 ## Package Control
 

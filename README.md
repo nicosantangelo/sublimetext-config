@@ -4,9 +4,13 @@ SublimeText-Config **WIP**
 Packages, keybindings and settings from my Sublime Text configuration.
 
 
+# Workflow
+
+Important keybindings and normal workflow here
+
 # Keybindings
 
-Platforms
+The difference between platforms is mostly changing ctrl (Windows, Linux) by super (Mac).
 
 ## Vintage
 
@@ -79,11 +83,9 @@ Rails Partial                  Vintage-Origami
 RSpec (snippets and syntax)    
 ````
 
-if you're using [Package Control](https://sublime.wbond.net/), you can add any of those names to your `Package Control.sublime-settings` file and after restaring it will be installed automatically
+if you're using [Package Control](https://sublime.wbond.net/installation), you can add any of those names to your `Package Control.sublime-settings` file and after restaring it will be installed automatically.
 
-## Package Control
-
-Install stuff
+If you're not using Package Control, you can search for each package and clone it on your Packages folder.
 
 # Preferences
 

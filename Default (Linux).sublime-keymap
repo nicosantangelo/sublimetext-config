@@ -1,0 +1,117 @@
+[
+	// Shortcuts for Package manager
+	{ "keys": ["ctrl+shift+y"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Set Syntax "} },
+
+	// ERB helper
+	{ "keys": ["ctrl+shift+."], "command": "erb" },
+
+	// Go to the end of the line in insert mode
+    { "keys": ["ctrl+shift+a"], "command": "run_macro_file", "args": {"file": "Packages/User/insert_last.sublime-macro"} },
+
+    // Insert a semicolon (;) at the end of the line
+    { "keys": ["ctrl+shift+,"], "command": "run_macro_file", "args": {"file": "Packages/User/insert_semicolon_last.sublime-macro"} },
+
+	// Add another way to travel between panels for Vintage Origami
+	{ "keys": ["alt+k"], "command": "travel_to_pane", "args": {"direction": "up"}	},
+	{ "keys": ["alt+j"], "command": "travel_to_pane", "args": {"direction": "down"} },
+	{ "keys": ["alt+l"], "command": "travel_to_pane", "args": {"direction": "right"} },
+	{ "keys": ["alt+h"], "command": "travel_to_pane", "args": {"direction": "left"}  },
+
+
+/* ==========================================================================
+	Vintage
+	========================================================================== */
+
+	// Move right in overlay (open tab)
+	{ "keys": ["alt+l"], "command": "move", "args": { "by": "characters", "forward": true },
+		"context": [ { "key": "overlay_visible", "operator": "equal", "operand": true } ]
+	},
+
+	// Move down in overlay
+	{ "keys": ["alt+j"], "command": "move", "args": { "by": "lines", "forward": true },
+		"context": [ { "key": "overlay_visible", "operator": "equal", "operand": true } ]
+	},
+
+	// Move up in overlay
+	{ "keys": ["alt+k"], "command": "move", "args": { "by": "lines", "forward": false },
+		"context": [ { "key": "overlay_visible", "operator": "equal", "operand": true } ]
+	},
+
+   	// Exit command mode
+	{ "keys": ["j", "j"], "command": "exit_insert_mode",
+		"context": [ { "key": "setting.command_mode", "operand": false }, { "key": "setting.is_widget", "operand": false } ]
+	},
+
+	// Multiselection (more than one cursor)
+	{ "keys": ["ctrl+alt+k"], "command": "select_lines", "args": {"forward": false}, "context": [{"key": "setting.command_mode"}] },
+	{ "keys": ["ctrl+alt+j"], "command": "select_lines", "args": {"forward": true}, "context": [{"key": "setting.command_mode"}] },
+	
+	// Move lines
+	{ "keys": ["ctrl+shift+k"], "command": "swap_line_up", "context": [{"key": "setting.command_mode"}] },
+	{ "keys": ["ctrl+shift+j"], "command": "swap_line_down", "context": [{"key": "setting.command_mode"}] },
+
+	// Tabs: move from tab to tab...
+    { "keys": ["g", "t"], "command": "next_view", "context": [{ "key": "setting.command_mode", "operand": true }] },
+    { "keys": ["ctrl+l"], "command": "next_view", "context": [{ "key": "overlay_visible", "operator": "equal", "operand": false }] },
+
+    { "keys": ["g", "T"], "command": "prev_view", "context": [{ "key": "setting.command_mode", "operand": true }] },
+    { "keys": ["ctrl+h"], "command": "prev_view", "context": [{ "key": "overlay_visible", "operator": "equal", "operand": false }] },
+
+    //...change tab position
+	{ "keys": ["g", "H"], "command": "move_tab", "args": { "position": "-1" }, "context": [{ "key": "setting.command_mode" }] },
+	{ "keys": ["g", "L"], "command": "move_tab", "args": { "position": "+1" }, "context": [{ "key": "setting.command_mode" }] },
+
+    // Search results
+    { "keys": ["g", "o"], "command": "next_result", "context": [{ "key": "setting.command_mode" }] },
+    { "keys": ["g", "O"], "command": "prev_result", "context": [{ "key": "setting.command_mode" }] },
+
+    // Go to definition
+    { "keys": ["g", "d"], "command": "goto_definition", "context": [{ "key": "setting.command_mode" }] },
+
+    // Easy Motion
+    { 
+        "keys": [" ", "<character>"], 
+        "command": "easy_motion",
+        "args": { "select_text": false },
+        "context": [{ "key": "setting.command_mode", "operand": true }]
+    },
+
+/* ==========================================================================
+	EasyMotion
+	========================================================================== */
+    { 
+        "keys": ["ctrl+,", "<character>"], 
+        "command": "easy_motion",
+        "args": {"select_text": false} ,
+        "context": [{ "key": "setting.command_mode" }]
+    },
+
+/* ==========================================================================
+	SublimeGit
+	========================================================================== */
+    { "keys": ["D"], "command": "git_diff_cached",
+        "context": [
+            { "key": "selector", "operator": "equal", "operand": "meta.git-status.line"}
+        ]
+    },
+    { "keys": ["ctrl+alt+g"], "command": "git_diff_cached" },
+    { "keys": ["ctrl+alt+s"], "command": "git_status" },
+    { "keys": ["ctrl+alt+c"], "command": "git_commit" },
+
+/* ==========================================================================
+	RubyTest
+	========================================================================== */
+ 	// Single test
+	{ "keys": ["alt+."], "command": "run_single_ruby_test",
+		"context": [
+			{ "key": "selector", "operator": "equal", "operand": "source.ruby, source.rspec, text.gherkin.feature"}
+		]
+	},
+
+	// test file
+	{ "keys": ["alt+,"], "command": "run_all_ruby_test",
+		"context": [
+			{ "key": "selector", "operator": "equal", "operand": "source.ruby, source.rspec, text.gherkin.feature"}
+		]
+	}
+]

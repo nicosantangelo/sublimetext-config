@@ -1,0 +1,27 @@
+[
+	{
+		"args":
+		{
+			"commands":
+			[
+				[
+					"run_macro_file",
+					{
+						"file": "Packages/User/insert_last.sublime-macro"
+					}
+				],
+				[
+					"insert",
+					{
+						"characters": ";"
+					}
+				],
+				[
+					"exit_insert_mode",
+					null
+				]
+			]
+		},
+		"command": "sequence"
+	}
+]

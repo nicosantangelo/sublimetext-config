@@ -1,0 +1,18 @@
+[
+	{
+		"args": null,
+		"command": "exit_insert_mode"
+	},
+	{
+		"args":
+		{
+			"register": "\"",
+			"to": "hardeol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args": null,
+		"command": "enter_insert_mode"
+	}	
+]

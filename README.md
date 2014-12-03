@@ -14,7 +14,7 @@ The difference between platforms is mostly changing ctrl (Windows, Linux) by sup
 
 ## Vintage
 
-The Vintage config is mostly done to try to merge SublimeText shortcuts without leaving the confort of the home row.
+The Vintage config tries to merge Sublime Text shortcuts with the Vim command mode, without leaving the confort of the home row.
 
 ### Useful bindings
 
@@ -86,6 +86,19 @@ RSpec (snippets and syntax)
 if you're using [Package Control](https://sublime.wbond.net/installation), you can add any of those names to your `Package Control.sublime-settings` file and after restaring it will be installed automatically.
 
 If you're not using Package Control, you can search for each package and clone it on your Packages folder.
+
+### Essential
+
+1. [All Autocomplete](https://sublime.wbond.net/packages/All%20Autocomplete): Extends the default autocomplete to find matches in all open files. By default Sublime only considers words found in the current file.
+2. [Emmet](http://emmet.io/): A **ton** of useful stuff for HTML and CSS.
+3. [GitGutter](https://sublime.wbond.net/packages/GitGutter): Show an icon in the gutter area indicating whether a line has been inserted, modified or deleted.
+4. [Origami](https://sublime.wbond.net/packages/Origami): Keyboard driven pane management. Split the window however you like! Create new panes, delete panes, move and clone views from pane to pane.
+5. [SublimeGit](https://sublime.wbond.net/packages/SublimeGit): Full-featured Git integration for Sublime Text 2 and 3. Learn to use it and amaze your co-workers!.
+6. [SublimeLinter](https://sublime.wbond.net/packages/SublimeLinter): Interactive code linting framework for Sublime Text 3. It has support for a bunch of languages (provided as separate packages).
+
+Honorable mention:
+
+* [PlainTasks](https://sublime.wbond.net/packages/PlainTasks): Todo-list plugin for Sublime Text.
 
 # Preferences
 

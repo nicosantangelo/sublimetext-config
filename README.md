@@ -18,7 +18,7 @@ The Vintage config tries to merge Sublime Text shortcuts with the Vim command mo
 
 ### Useful bindings
 
-````json
+````javascript
     //
     // Overlay (use GoTo Anything panel without using the arrow keys):
 
@@ -104,7 +104,7 @@ Honorable mention:
 
 The preferences file it's probably a personal thing, but a few interesting options are:
 
-````json
+````javascript
 {
     //
     // Exclude patterns so you get cleaner searches

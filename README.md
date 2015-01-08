@@ -58,10 +58,11 @@ The Vintage config tries to merge Sublime Text shortcuts with the Vim command mo
 I have the following packages installed:
 
 ````
-AAAPackageDev                  RubyTest
-All Autocomplete               Sass
-ApplySyntax                    SublimeERB
-Better Completion              SublimeGit
+AAAPackageDev                  RSpec (snippets and syntax)
+All Autocomplete               RubyTest
+ApplySyntax                    Sass
+Better Completion              SublimeERB
+Copy from Find Results         SublimeGit
 EasyMotion                     SublimeLinter
 Emmet                          SublimeLinter-jshint
 File Navigator                 SublimeLinter-pylint
@@ -76,7 +77,6 @@ PlainTasks                     Trello
 Predawn                        Vintage Escape
 Quick File Creator             Vintage Surround
 Rails Partial                  Vintage-Origami
-RSpec (snippets and syntax)    
 ````
 
 if you're using [Package Control](https://sublime.wbond.net/installation), you can add any of those names to your `Package Control.sublime-settings` file and after restaring it will be installed automatically.
@@ -95,6 +95,7 @@ If you're not using Package Control, you can search for each package and clone i
 Honorable mention:
 
 * [PlainTasks](https://sublime.wbond.net/packages/PlainTasks): Todo-list plugin for Sublime Text.
+* [Copy from Find Results](https://packagecontrol.io/packages/Copy%20from%20Find%20Results): Copy without line numbers
 
 # Preferences
 

@@ -65,7 +65,7 @@ Better Completion              SublimeERB
 Copy from Find Results         SublimeGit
 EasyMotion                     SublimeLinter
 Emmet                          SublimeLinter-jshint
-File Navigator                 SublimeLinter-pylint
+FileBrowser                    SublimeLinter-pylint
 GitGutter                      SublimeLinter-ruby
 Gulp                           SublimeREPL
 I18n Rails                     Sublimerge Pro

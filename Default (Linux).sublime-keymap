@@ -61,6 +61,11 @@
 	{ "keys": ["g", "H"], "command": "move_tab", "args": { "position": "-1" }, "context": [{ "key": "setting.command_mode" }] },
 	{ "keys": ["g", "L"], "command": "move_tab", "args": { "position": "+1" }, "context": [{ "key": "setting.command_mode" }] },
 
+    //..close specific ones
+    { "keys": [",", "t"], "command": "close_others", "context": [{ "key": "setting.command_mode", "operand": true }] },
+    { "keys": [",", "r"], "command": "close_to_right", "context": [{ "key": "setting.command_mode", "operand": true }] },
+    { "keys": [",", "T"], "command": "close_all", "context": [{ "key": "setting.command_mode", "operand": true }] },
+
     // Search results
     { "keys": ["g", "o"], "command": "next_result", "context": [{ "key": "setting.command_mode" }] },
     { "keys": ["g", "O"], "command": "prev_result", "context": [{ "key": "setting.command_mode" }] },

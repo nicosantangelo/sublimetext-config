@@ -1,0 +1,6 @@
+[
+    {
+      "caption": ":pwd - Current path",
+      "command": "get_current_path"
+    }
+]

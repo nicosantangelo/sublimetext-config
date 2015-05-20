@@ -58,43 +58,44 @@ The Vintage config tries to merge Sublime Text shortcuts with the Vim command mo
 I have the following packages installed:
 
 ````
-AAAPackageDev                  RSpec (snippets and syntax)
-All Autocomplete               RubyTest
-ApplySyntax                    Sass
-Better Completion              SublimeERB
-Copy from Find Results         SublimeGit
+AAAPackageDev                  Rails Partial
+All Autocomplete               RSpec (snippets and syntax)
+ApplySyntax                    RubyTest
+Better Completion              Sass
+Copy from Find Results         SublimeERB
 EasyMotion                     SublimeLinter
 Emmet                          SublimeLinter-jshint
 FileBrowser                    SublimeLinter-pylint
 GitGutter                      SublimeLinter-ruby
-Gulp                           SublimeREPL
-I18n Rails                     Sublimerge Pro
-Jasmine                        Surround
-Monokai Extended               Terminal
-MoveTab                        Theme - Gravity
-Origami                        Theme - Spacegray
-PlainTasks                     Trello
-Predawn                        Vintage Escape
-Quick File Creator             Vintage Surround
-Rails Partial                  Vintage-Origami
+GitSavvy                       SublimeREPL
+Gulp                           Sublimerge Pro
+I18n_Rails                     Surround
+Jasmine                        Terminal
+Monokai_Extended               Theme - Gravity
+MoveTab                        Theme - Spacegray
+Origami                        Trello
+PlainTasks                     Vintage Escape
+Predawn                        Vintage Surround
+Quick_File_Creator             Vintage-Origami
 ````
 
-if you're using [Package Control](https://sublime.wbond.net/installation), you can add any of those names to your `Package Control.sublime-settings` file and after restaring it will be installed automatically.
+if you're using [Package Control](https://packagecontrol.io/installation), you can add any of those names to your `Package Control.sublime-settings` file and after restaring it will be installed automatically.
 
 If you're not using Package Control, you can search for each package and clone it on your Packages folder.
 
 ### Essential
 
-1. [All Autocomplete](https://sublime.wbond.net/packages/All%20Autocomplete): Extends the default autocomplete to find matches in all open files. By default Sublime only considers words found in the current file.
+1. [All Autocomplete](https://packagecontrol.io/packages/All%20Autocomplete): Extends the default autocomplete to find matches in all open files. By default Sublime only considers words found in the current file.
 2. [Emmet](http://emmet.io/): A **ton** of useful stuff for HTML and CSS.
-3. [GitGutter](https://sublime.wbond.net/packages/GitGutter): Show an icon in the gutter area indicating whether a line has been inserted, modified or deleted.
-4. [Origami](https://sublime.wbond.net/packages/Origami): Keyboard driven pane management. Split the window however you like! Create new panes, delete panes, move and clone views from pane to pane.
-5. [SublimeGit](https://sublime.wbond.net/packages/SublimeGit): Full-featured Git integration for Sublime Text 2 and 3. Learn to use it and amaze your co-workers!.
-6. [SublimeLinter](https://sublime.wbond.net/packages/SublimeLinter): Interactive code linting framework for Sublime Text 3. It has support for a bunch of languages (provided as separate packages).
+3. [GitGutter](https://packagecontrol.io/packages/GitGutter): Show an icon in the gutter area indicating whether a line has been inserted, modified or deleted.
+4. [Origami](https://packagecontrol.io/packages/Origami): Keyboard driven pane management. Split the window however you like! Create new panes, delete panes, move and clone views from pane to pane.
+5. [GitSavvy](https://packagecontrol.io/packages/GitSavvy): Full git and GitHub integration with Sublime Text 3. **Nota:** Si por alguna razón están usando Sublime Text 2, pueden probar [SublimeGit](https://packagecontrol.io/packages/SublimeGit).
+6. [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter): Interactive code linting framework for Sublime Text 3. It has support for a bunch of languages (provided as separate packages).
+7. [Sublimerge Pro](https://packagecontrol.io/packages/Sublimerge%20Pro): The professional, side-by-side tool to diff and merge files and directories right in Sublime Text. Supports Git, SVN and Mercurial.
 
 Honorable mention:
 
-* [PlainTasks](https://sublime.wbond.net/packages/PlainTasks): Todo-list plugin for Sublime Text.
+* [PlainTasks](https://packagecontrol.io/packages/PlainTasks): Todo-list plugin for Sublime Text.
 * [Copy from Find Results](https://packagecontrol.io/packages/Copy%20from%20Find%20Results): Copy without line numbers
 
 # Preferences

@@ -15,6 +15,7 @@ The Vintage config tries to merge Sublime Text shortcuts with the Vim command mo
 ### Useful bindings
 
 ````javascript
+{
     //
     // Overlay (use GoTo Anything panel without using the arrow keys):
 
@@ -50,7 +51,8 @@ The Vintage config tries to merge Sublime Text shortcuts with the Vim command mo
     
     // Move lines
     { "keys": ["super+shift+k"], "command": "swap_line_up", "context": [{"key": "setting.command_mode"}] },
-    { "keys": ["super+shift+j"], "command": "swap_line_down", "context": [{"key": "setting.command_mode"}] },
+    { "keys": ["super+shift+j"], "command": "swap_line_down", "context": [{"key": "setting.command_mode"}] }
+}
 ````
 
 # Packages
@@ -62,21 +64,21 @@ AAAPackageDev                  Rails Partial
 All Autocomplete               RSpec (snippets and syntax)
 ApplySyntax                    RubyTest
 Better Completion              Sass
-Copy from Find Results         SublimeERB
-EasyMotion                     SublimeLinter
-Emmet                          SublimeLinter-jshint
-FileBrowser                    SublimeLinter-pylint
-GitGutter                      SublimeLinter-ruby
-GitSavvy                       SublimeREPL
-Gulp                           Sublimerge Pro
-I18n_Rails                     Surround
-Jasmine                        Terminal
-Monokai_Extended               Theme - Gravity
+Change Quotes                  SublimeERB
+Copy from Find Results         SublimeLinter
+EasyMotion                     SublimeLinter-jshint
+Emmet                          SublimeLinter-pylint
+FileBrowser                    SublimeLinter-ruby
+GitGutter                      SublimeREPL
+GitSavvy                       Sublimerge Pro
+Gulp                           Surround
+I18n Rails                     Terminal
+Jasmine                        Theme - Gravity
 MoveTab                        Theme - Spacegray
 Origami                        Trello
 PlainTasks                     Vintage Escape
 Predawn                        Vintage Surround
-Quick_File_Creator             Vintage-Origami
+Quick File Creator             Vintage-Origami
 ````
 
 if you're using [Package Control](https://packagecontrol.io/installation), you can add any of those names to your `Package Control.sublime-settings` file and after restaring it will be installed automatically.

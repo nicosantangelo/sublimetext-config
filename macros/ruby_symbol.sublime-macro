@@ -1,0 +1,163 @@
+[
+	{
+		"args":
+		{
+			"action_args": null,
+			"action_command": null,
+			"motion_args":
+			{
+				"character": "=",
+				"extend": true
+			},
+			"motion_clip_to_line": true,
+			"motion_command": "vi_move_to_character",
+			"motion_inclusive": true,
+			"motion_mode": 0
+		},
+		"command": "vi_eval"
+	},
+	{
+		"args":
+		{
+			"action_args": null,
+			"action_command": null,
+			"motion_args":
+			{
+				"extend": true,
+				"forward": false
+			},
+			"motion_clip_to_line": false,
+			"motion_command": "vi_move_by_characters_in_line",
+			"motion_inclusive": false,
+			"motion_mode": 0
+		},
+		"command": "vi_eval"
+	},
+	{
+		"args":
+		{
+			"commands":
+			[
+				[
+					"enter_visual_mode",
+					null
+				],
+				[
+					"vi_eval",
+					{
+						"action_args": null,
+						"action_command": null,
+						"motion_args":
+						{
+							"extend": true,
+							"forward": true,
+							"visual": false
+						},
+						"motion_clip_to_line": false,
+						"motion_command": "vi_move_by_characters_in_line",
+						"motion_inclusive": false,
+						"motion_mode": 0
+					}
+				],
+				[
+					"vi_eval",
+					{
+						"action_args": null,
+						"action_command": null,
+						"motion_args":
+						{
+							"extend": true,
+							"forward": true,
+							"visual": false
+						},
+						"motion_clip_to_line": false,
+						"motion_command": "vi_move_by_characters_in_line",
+						"motion_inclusive": false,
+						"motion_mode": 0
+					}
+				],
+				[
+					"vi_eval",
+					{
+						"action_args":
+						{
+							"insert_command": "vi_delete"
+						},
+						"action_command": "enter_insert_mode",
+						"motion_args": null,
+						"motion_clip_to_line": false,
+						"motion_command": null,
+						"motion_inclusive": false,
+						"motion_mode": 0
+					}
+				],
+				[
+					"insert",
+					{
+						"characters": ":"
+					}
+				],
+				[
+					"exit_insert_mode",
+					null
+				]
+			]
+		},
+		"command": "sequence"
+	},
+	{
+		"args":
+		{
+			"action_args": null,
+			"action_command": null,
+			"motion_args":
+			{
+				"by": "stops",
+				"empty_line": true,
+				"extend": true,
+				"forward": false,
+				"punct_begin": true,
+				"word_begin": true
+			},
+			"motion_clip_to_line": true,
+			"motion_command": "move",
+			"motion_inclusive": false,
+			"motion_mode": 0
+		},
+		"command": "vi_eval"
+	},
+	{
+		"args":
+		{
+			"action_args": null,
+			"action_command": null,
+			"motion_args":
+			{
+				"extend": true,
+				"forward": false
+			},
+			"motion_clip_to_line": false,
+			"motion_command": "vi_move_by_characters_in_line",
+			"motion_inclusive": false,
+			"motion_mode": 0
+		},
+		"command": "vi_eval"
+	},
+	{
+		"args":
+		{
+			"action_args":
+			{
+			},
+			"action_command": "vi_right_delete",
+			"motion_args":
+			{
+			},
+			"motion_clip_to_line": false,
+			"motion_command": null,
+			"motion_inclusive": false,
+			"motion_mode": 0
+		},
+		"command": "vi_eval"
+	}
+]

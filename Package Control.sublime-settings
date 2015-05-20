@@ -2,26 +2,21 @@
 	"in_process_packages":
 	[
 	],
-	"installed_dependencies":
-	[
-		"0_package_control_loader",
-		"bz2"
-	],
 	"installed_packages":
 	[
 		"AAAPackageDev",
 		"All Autocomplete",
 		"ApplySyntax",
 		"Better Completion",
+        "ChangeQuotes",
 		"Copy from Find Results",
 		"EasyMotion",
 		"Emmet",
-		"File Navigator",
 		"GitGutter",
+        "GitSavvy",
 		"Gulp",
 		"I18n Rails",
 		"Jasmine",
-		"Monokai Extended",
 		"MoveTab",
 		"Origami",
 		"PlainTasks",
@@ -31,9 +26,7 @@
 		"RSpec (snippets and syntax)",
 		"RubyTest",
 		"Sass",
-		"Spotify",
 		"SublimeERB",
-		"SublimeGit",
 		"SublimeLinter",
 		"SublimeLinter-jshint",
 		"SublimeLinter-pylint",

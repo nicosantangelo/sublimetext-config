@@ -91,7 +91,7 @@ If you're not using Package Control, you can search for each package and clone i
 2. [Emmet](http://emmet.io/): A **ton** of useful stuff for HTML and CSS.
 3. [GitGutter](https://packagecontrol.io/packages/GitGutter): Show an icon in the gutter area indicating whether a line has been inserted, modified or deleted.
 4. [Origami](https://packagecontrol.io/packages/Origami): Keyboard driven pane management. Split the window however you like! Create new panes, delete panes, move and clone views from pane to pane.
-5. [GitSavvy](https://packagecontrol.io/packages/GitSavvy): Full git and GitHub integration with Sublime Text 3. **Nota:** Si por alguna razón están usando Sublime Text 2, pueden probar [SublimeGit](https://packagecontrol.io/packages/SublimeGit).
+5. [GitSavvy](https://packagecontrol.io/packages/GitSavvy): Full git and GitHub integration with Sublime Text 3. **Note:** If you're using Sublime Text 2, you can try [SublimeGit](https://packagecontrol.io/packages/SublimeGit).
 6. [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter): Interactive code linting framework for Sublime Text 3. It has support for a bunch of languages (provided as separate packages).
 7. [Sublimerge Pro](https://packagecontrol.io/packages/Sublimerge%20Pro): The professional, side-by-side tool to diff and merge files and directories right in Sublime Text. Supports Git, SVN and Mercurial.
 

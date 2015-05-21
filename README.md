@@ -112,15 +112,19 @@ The preferences file it's probably a personal thing, but a few interesting optio
     "folder_exclude_patterns": [ /*...*/ ],
 
     //
-    // To use along side origami, to have the split on focus take up 75% of the screen
+    // Misc
+    "highlight_line": true,
+    "bold_folder_labels": true,
+
+    //
+    // To use alongside origami, to have the split on focus take up 75% of the screen
     "origami_auto_zoom_on_focus": 0.75
 
     //
     // Vim
     // Have a block caret and start in command mode
-    "highlight_line": false,
     "inverse_caret_state": true,
     "caret_style": "phase",
-    "vintage_start_in_command_mode": true,
+    "vintage_start_in_command_mode": true
 }
 ````

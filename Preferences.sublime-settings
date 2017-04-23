@@ -1,8 +1,24 @@
 {
 	"atomic_save": false,
+	"auto_complete": true,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html"
+		},
+		{
+			"characters": ".",
+			"selector": "source.js"
+		},
+		{
+			"characters": ".",
+			"selector": "source.ruby"
+		}
+	],
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Theme - Gravity/Monokai Gravity (SL).tmTheme",
+	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
 	"file_exclude_patterns":
 	[
 		"*.sqlite3",
@@ -24,19 +40,28 @@
 		".DS_Store",
 		"*.class",
 		"*.psd",
-		"*.db"
+		"*.db",
+		"*.sublime-workspace"
 	],
 	"folder_exclude_patterns":
 	[
+		".happypack",
+		".meteor",
 		".svn",
 		".git",
 		".hg",
 		"CVS",
 		"tmp/cache",
+		"vendor/cache",
 		"tmp",
+		"platforms",
 		"node_modules",
-		"dist",
-		"android"
+		"bower_components",
+		"coverage",
+		"json_data",
+		"rethinkdb_data",
+		"server-dist",
+		"dist"
 	],
 	"font_face": "Monaco",
 	"font_size": 14,
@@ -47,7 +72,7 @@
 	],
 	"inverse_caret_state": true,
 	"origami_auto_zoom_on_focus": 0.75,
-	"theme": "Gravity.sublime-theme",
+	"theme": "Spacegray.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"vintage_start_in_command_mode": true
 }

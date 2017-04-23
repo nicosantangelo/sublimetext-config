@@ -60,47 +60,51 @@ The Vintage config tries to merge Sublime Text shortcuts with the Vim command mo
 I have the [following packages](https://github.com/NicoSantangelo/sublimetext-config/blob/master/Package%20Control.sublime-settings): 
 
 <details>
-Alignment
-All Autocomplete
-ApplySyntax
-Argument Noun
-Babel
-Better Completion
-BracketGuard
-ChangeQuotes
-Copy from Find Results
-EasyMotion
-Emmet
-ExpandRegion
-FileBrowser
-GitGutter
-GitSavvy
-Gulp
-I18n Rails
-Jasmine
-Markdown Preview
-MarkdownEditing
-MaxPane
-MoveTab
-Origami
-PlainTasks
-RSpec
-RubyTest
-Sass
-SideBarEnhancements
-SublimeLinter
-Sublimerge Pro
-Surround
-Terminal
-Theme - Spacegray
-Transpose Word
-Trello
-Vintage Escape
-Vintage Surround
-Vintage YankStack
-Vintage-Origami
-VintageLines
+<summary>Packages</summary>
+
+* Alignment
+* All Autocomplete
+* ApplySyntax
+* Argument Noun
+* Babel
+* Better Completion
+* BracketGuard
+* ChangeQuotes
+* Copy from Find Results
+* EasyMotion
+* Emmet
+* ExpandRegion
+* FileBrowser
+* GitGutter
+* GitSavvy
+* Gulp
+* I18n Rails
+* Jasmine
+* Markdown Preview
+* MarkdownEditing
+* MaxPane
+* MoveTab
+* Origami
+* PlainTasks
+* RSpec
+* RubyTest
+* Sass
+* SideBarEnhancements
+* SublimeLinter
+* Sublimerge Pro
+* Surround
+* Terminal
+* Theme - Spacegray
+* Transpose Word
+* Trello
+* Vintage Escape
+* Vintage Surround
+* Vintage YankStack
+* Vintage-Origami
+* VintageLines
 </details>
+
+<br />
 
 if you're using [Package Control](https://packagecontrol.io/installation), you can add any of those names to your `Package Control.sublime-settings` file and after restaring it will be installed automatically.
 

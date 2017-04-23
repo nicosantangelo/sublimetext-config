@@ -1,112 +1,198 @@
 [
-    // Shortcuts for Package manager
-    { "keys": ["super+shift+y"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Set Syntax "} },
+  // Shortcuts for Package manager
+  { "keys": ["super+shift+y"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Set Syntax "} },
 
-    // ERB helper
-    { "keys": ["super+shift+."], "command": "erb" },
+  // ERB helper
+  { "keys": ["super+shift+."], "command": "erb" },
 
-    // Go to the end of the line in insert mode
-    { "keys": ["super+shift+a"], "command": "run_macro_file", "args": {"file": "Packages/User/insert_last.sublime-macro"} },
+  // Go to the end of the line in insert mode
+  { "keys": ["super+shift+a"], "command": "run_macro_file", "args": {"file": "Packages/User/insert_last.sublime-macro"} },
 
-    // Insert a semicolon (;) at the end of the line
-    { "keys": ["super+shift+,"], "command": "run_macro_file", "args": {"file": "Packages/User/insert_semicolon_last.sublime-macro"} },
+  // Insert a semicolon (;) at the end of the line
+  { "keys": ["super+shift+,"], "command": "run_macro_file", "args": {"file": "Packages/User/insert_semicolon_last.sublime-macro"} },
 
-    // Add another way to travel between panels for Vintage Origami
-    { "keys": ["alt+k"], "command": "travel_to_pane", "args": {"direction": "up"}   },
-    { "keys": ["alt+j"], "command": "travel_to_pane", "args": {"direction": "down"} },
-    { "keys": ["alt+l"], "command": "travel_to_pane", "args": {"direction": "right"} },
-    { "keys": ["alt+h"], "command": "travel_to_pane", "args": {"direction": "left"}  },
+  // Add another way to travel between panels for Vintage Origami
+  { "keys": ["alt+k"], "command": "travel_to_pane", "args": {"direction": "up"}   },
+  { "keys": ["alt+j"], "command": "travel_to_pane", "args": {"direction": "down"} },
+  { "keys": ["alt+l"], "command": "travel_to_pane", "args": {"direction": "right"} },
+  { "keys": ["alt+h"], "command": "travel_to_pane", "args": {"direction": "left"}  },
 
-    // Remap gotos (I should check why I need to do this...)
-    { "keys": ["super+shift+r"], "command": "goto_symbol_in_project" },
-    { "keys": ["super+alt+down"], "command": "goto_definition" },
+  // Remap gotos (I should check why I need to do this...)
+  { "keys": ["super+shift+r"], "command": "goto_symbol_in_project" },
+  { "keys": ["super+alt+down"], "command": "goto_definition" },
 
-/* ==========================================================================
-    Vintage
-    ========================================================================== */
-
-    // Move right in overlay (open tab)
-    { "keys": ["super+l"], "command": "move", "args": { "by": "characters", "forward": true },
-        "context": [ { "key": "overlay_visible", "operator": "equal", "operand": true } ]
-    },
-
-    // Move down in overlay
-    { "keys": ["super+j"], "command": "move", "args": { "by": "lines", "forward": true },
-        "context": [ { "key": "overlay_visible", "operator": "equal", "operand": true } ]
-    },
-
-    // Move up in overlay
-    { "keys": ["super+k"], "command": "move", "args": { "by": "lines", "forward": false },
-        "context": [ { "key": "overlay_visible", "operator": "equal", "operand": true } ]
-    },
-
-    // Exit command mode
-    { "keys": ["j", "j"], "command": "exit_insert_mode",
-        "context": [ { "key": "setting.command_mode", "operand": false }, { "key": "setting.is_widget", "operand": false } ]
-    },
-
-    // Multiselection (more than one cursor)
-    { "keys": ["super+alt+k"], "command": "select_lines", "args": {"forward": false}, "context": [{"key": "setting.command_mode"}] },
-    { "keys": ["super+alt+j"], "command": "select_lines", "args": {"forward": true}, "context": [{"key": "setting.command_mode"}] },
-    
-    // Move lines
-    { "keys": ["super+shift+k"], "command": "swap_line_up", "context": [{"key": "setting.command_mode"}] },
-    { "keys": ["super+shift+j"], "command": "swap_line_down", "context": [{"key": "setting.command_mode"}] },
-
-    // Tabs: move from tab to tab...
-    { "keys": ["g", "t"], "command": "next_view", "context": [{ "key": "setting.command_mode", "operand": true }] },
-    { "keys": ["super+l"], "command": "next_view", "context": [{ "key": "overlay_visible", "operator": "equal", "operand": false }] },
-
-    { "keys": ["g", "T"], "command": "prev_view", "context": [{ "key": "setting.command_mode", "operand": true }] },
-    { "keys": ["super+h"], "command": "prev_view", "context": [{ "key": "overlay_visible", "operator": "equal", "operand": false }] },
-
-    //...change tab position
-    { "keys": ["g", "H"], "command": "move_tab", "args": { "position": "-1" }, "context": [{ "key": "setting.command_mode" }] },
-    { "keys": ["g", "L"], "command": "move_tab", "args": { "position": "+1" }, "context": [{ "key": "setting.command_mode" }] },
-    
-    //..close specific ones
-    { "keys": [",", "t"], "command": "close_others", "context": [{ "key": "setting.command_mode", "operand": true }] },
-    { "keys": [",", "r"], "command": "close_to_right", "context": [{ "key": "setting.command_mode", "operand": true }] },
-    { "keys": [",", "T"], "command": "close_all", "context": [{ "key": "setting.command_mode", "operand": true }] },
-
-    // Search results
-    { "keys": ["g", "o"], "command": "next_result", "context": [{ "key": "setting.command_mode" }] },
-    { "keys": ["g", "O"], "command": "prev_result", "context": [{ "key": "setting.command_mode" }] },
-
-    // Go to definition
-    { "keys": ["g", "d"], "command": "goto_definition", "context": [{ "key": "setting.command_mode" }] },
-
-    // Easy Motion
-    { 
-        "keys": [" ", "<character>"], 
-        "command": "easy_motion",
-        "args": { "select_text": false },
-        "context": [{ "key": "setting.command_mode", "operand": true }]
-    },
+  // Better expand to scope
+  { "keys": ["super+shift+space"], "command": "expand_region" },
 
 /* ==========================================================================
-    SublimeGit
-    ========================================================================== */
-    { "keys": ["D"], "command": "git_diff_cached", "context": [{ "key": "selector", "operator": "equal", "operand": "meta.git-status.line"}] },
+  Vintage
+  ========================================================================== */
 
-    { "keys": ["super+alt+g"], "command": "git_diff_cached" },
-    { "keys": ["super+alt+s"], "command": "git_status" },
-    { "keys": ["super+alt+c"], "command": "git_commit" },
+  // Move right in overlay (open tab)
+  { "keys": ["super+l"], "command": "move", "args": { "by": "characters", "forward": true },
+    "context": [ { "key": "overlay_visible", "operator": "equal", "operand": true } ]
+  },
+
+  // Move down in overlay
+  { "keys": ["super+j"], "command": "move", "args": { "by": "lines", "forward": true },
+    "context": [ { "key": "overlay_visible", "operator": "equal", "operand": true } ]
+  },
+
+  // Move up in overlay
+  { "keys": ["super+k"], "command": "move", "args": { "by": "lines", "forward": false },
+    "context": [ { "key": "overlay_visible", "operator": "equal", "operand": true } ]
+  },
+
+  // Exit command mode
+  { "keys": ["j", "j"], "command": "exit_insert_mode",
+    "context": [ { "key": "setting.command_mode", "operand": false }, { "key": "setting.is_widget", "operand": false } ]
+  },
+
+  // Multiselection (more than one cursor)
+  { "keys": ["super+alt+k"], "command": "select_lines", "args": {"forward": false}, "context": [{"key": "setting.command_mode"}] },
+  { "keys": ["super+alt+j"], "command": "select_lines", "args": {"forward": true}, "context": [{"key": "setting.command_mode"}] },
+
+  // Move lines
+  { "keys": ["super+shift+k"], "command": "swap_line_up", "context": [{"key": "setting.command_mode"}] },
+  { "keys": ["super+shift+j"], "command": "swap_line_down", "context": [{"key": "setting.command_mode"}] },
+
+  // Move from tab to tab...
+  { "keys": ["g", "t"], "command": "next_view", "context": [{ "key": "setting.command_mode", "operand": true }] },
+  { "keys": ["super+l"], "command": "next_view", "context": [{ "key": "overlay_visible", "operator": "equal", "operand": false }] },
+
+  { "keys": ["g", "T"], "command": "prev_view", "context": [{ "key": "setting.command_mode", "operand": true }] },
+  { "keys": ["super+h"], "command": "prev_view", "context": [{ "key": "overlay_visible", "operator": "equal", "operand": false }] },
+
+  //...change tab position
+  { "keys": ["g", "H"], "command": "move_tab", "args": { "position": "-1" }, "context": [{ "key": "setting.command_mode" }] },
+  { "keys": ["g", "L"], "command": "move_tab", "args": { "position": "+1" }, "context": [{ "key": "setting.command_mode" }] },
+
+  //...close specific tabs
+  { "keys": [",", "t"], "command": "close_others", "context": [{ "key": "setting.command_mode", "operand": true }] },
+  { "keys": [",", "r"], "command": "close_to_right", "context": [{ "key": "setting.command_mode", "operand": true }] },
+  { "keys": [",", "T"], "command": "close_all", "context": [{ "key": "setting.command_mode", "operand": true }] },
+
+  // Expand pane
+  { "keys": ["ctrl+a", "z"], "command": "max_pane" },
+
+  // Search results
+  { "keys": ["g", "o"], "command": "next_result", "context": [{ "key": "setting.command_mode" }] },
+  { "keys": ["g", "O"], "command": "prev_result", "context": [{ "key": "setting.command_mode" }] },
+
+  // Go to definition
+  { "keys": ["g", "d"], "command": "goto_definition", "context": [{ "key": "setting.command_mode" }] },
+
+  // Alignment symbols
+  { "keys": ["g", "a"], "command": "alignment", "context": [{ "key": "setting.command_mode" }] },
+
+  // Ruby change symbol
+  { "keys": ["g", "r"], "command": "run_macro_file", "args": {"file": "Packages/User/ruby_symbol.sublime-macro"},
+    "context": [
+      { "key": "setting.command_mode" },
+      { "key": "selector", "operator": "equal", "operand": "source.ruby, source.rspec, source.erb, text.haml"}
+    ]
+  },
+
+  // Change quotes
+  { "keys": ["g", "q"], "command": "change_quotes", "context": [{ "key": "setting.command_mode" } ] },
+
+  // Easy Motion
+  {
+    "keys": [" ", "<character>"],
+    "command": "easy_motion",
+    "args": { "select_text": false },
+    "context": [{ "key": "setting.command_mode", "operand": true }]
+  },
+
+  // FileBrowser
+  {
+    "keys": ["g", "f"], "command": "dired", "args": { "immediate": true },
+    "context": [{ "key": "setting.command_mode", "operand": true }]
+  },
+  {
+    "keys": ["g", "F"], "command": "dired", "args": { "immediate": true, "project": true },
+    "context": [{ "key": "setting.command_mode", "operand": true }]
+  },
+
+  // Find in files
+  { "keys": [",", "f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+
+  // Matching HTML element with %
+  { "keys": ["%"], "command": "run_emmet_action", "args": { "action": "matching_pair" },
+    "context": [
+      { "key": "selector", "operator": "equal", "operand": "text.html" },
+      { "key": "emmet_action_enabled.matching_pair" },
+      { "key": "setting.command_mode", "operand": true }
+    ]
+  },
 
 /* ==========================================================================
-    RubyTest
-    ========================================================================== */
-    // Single test
-    { "keys": ["alt+."], "command": "run_single_ruby_test",
-        "context": [
-            { "key": "selector", "operator": "equal", "operand": "source.ruby, source.rspec, text.gherkin.feature"}
-        ]
-    },
+  GitSavvy
+  ========================================================================== */
 
-    // Test file
-    { "keys": ["alt+,"], "command": "run_all_ruby_test",
-        "context": [
-            { "key": "selector", "operator": "equal", "operand": "source.ruby, source.rspec, text.gherkin.feature"}
-        ]
-    }
+  { "keys": ["super+alt+g"], "command": "gs_diff", "args": { "in_cached_mode": true } },
+  { "keys": ["super+alt+s"], "command": "gs_show_status" },
+  { "keys": ["super+alt+p"], "command": "gs_push_to_branch" },
+
+  // Refer to this damn PR https://github.com/divmain/GitSavvy/pull/372
+  {
+    "keys": ["o"],
+    "command": "gs_status_open_file",
+    "context": [
+      { "key": "setting.command_mode", "operator": "equal", "operand": true },
+      { "key": "setting.git_savvy.status_view", "operator": "equal", "operand": true },
+      { "key": "selector", "operator": "equal", "operand": "git-savvy.status meta.git-savvy.status.section meta.git-savvy.status.file" }
+    ]
+  },
+  {
+    "keys": ["s"],
+    "command": "gs_status_stage_file",
+    "context": [
+      { "key": "setting.command_mode", "operator": "equal", "operand": true },
+      { "key": "setting.git_savvy.status_view", "operator": "equal", "operand": true },
+      { "key": "selector", "operator": "equal", "operand": "git-savvy.status meta.git-savvy.status.section meta.git-savvy.status.file" }
+    ]
+  },
+  {
+    "keys": ["u"],
+    "command": "gs_status_unstage_file",
+    "context": [
+      { "key": "setting.command_mode", "operator": "equal", "operand": true },
+      { "key": "setting.git_savvy.status_view", "operator": "equal", "operand": true },
+      { "key": "selector", "operator": "equal", "operand": "git-savvy.status meta.git-savvy.status.section meta.git-savvy.status.file" }
+    ]
+  },
+  {
+    "keys": ["c"],
+    "command": "gs_status_commit",
+    "context": [
+      { "key": "setting.command_mode", "operator": "equal", "operand": true },
+      { "key": "setting.git_savvy.status_view", "operator": "equal", "operand": true }
+    ]
+  },
+  {
+    "keys": ["F"],
+    "command": "gs_diff",
+    "args": { "in_cached_mode": true },
+    "context": [
+      { "key": "setting.command_mode", "operator": "equal", "operand": true },
+      { "key": "setting.git_savvy.status_view", "operator": "equal", "operand": true }
+    ]
+  },
+  {
+    "keys": ["e"],
+    "command": "gs_status_diff",
+    "context": [
+      { "key": "setting.command_mode", "operator": "equal", "operand": true },
+      { "key": "setting.git_savvy.status_view", "operator": "equal", "operand": true },
+      { "key": "selector", "operator": "equal", "operand": "git-savvy.status meta.git-savvy.status.section meta.git-savvy.status.file" }
+    ]
+  },
+
+/* ==========================================================================
+  Transpose
+  ========================================================================== */
+
+  { "keys": ["ctrl+t"], "command": "transpose_char" },
+  { "keys": ["ctrl+shift+t"], "command": "transpose_word" }
 ]

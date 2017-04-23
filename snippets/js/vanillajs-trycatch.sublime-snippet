@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+try {
+  ${1:$TM_SELECTED_TEXT}${0}
+} catch(e) { console.error(e) }
+]]></content>
+    <tabTrigger>trycatch</tabTrigger>
+    <scope>source.js</scope>
+    <description>try catch</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+console.log('*********************************************')
+console.log(${1:$TM_SELECTED_TEXT})${0}
+console.log('*********************************************')
+]]></content>
+    <tabTrigger>shout</tabTrigger>
+    <scope>source.js</scope>
+    <description>shout console.log</description>
+</snippet>

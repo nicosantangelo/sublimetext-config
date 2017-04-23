@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+console.time('${0:identifier}')
+$TM_SELECTED_TEXT
+console.timeEnd('${0:identifier}')
+]]></content>
+    <tabTrigger>ct</tabTrigger>
+    <scope>source.js</scope>
+    <description>console.time</description>
+</snippet>
